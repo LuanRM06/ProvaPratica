@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #17548a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#Menu {
+    display: flex;
+    gap: 20px;
+}
+
+#Menu li {
+    list-style: none;
+}
+
+#Menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#Menu a:hover {
+    background-color: #0d395d;
+}
+
+#Text {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#TextH1 {
+    font-size: 28px;
+    color: #17548a;
+    margin-bottom: 15px;
+}
+
+#TextP {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+#Carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+}
+
+#Carrossel img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+#Carrossel img:hover {
+    transform: scale(1.1);
+}
+
+.Call {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Call:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#LeftArrow,
+#RightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#LeftArrow {
+    left: 10px;
+    display: none;
+}
+
+#RightArrow {
+    right: 10px;
+}
+
+#Video3{
+    display: none;
+}
+
+
+#Background {
+    background-color: #eaf4f9;
+    background-image:url(JET-1.png);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    align-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .Top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #Carrossel {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #Text {
+        padding: 15px;
+    }
+}
